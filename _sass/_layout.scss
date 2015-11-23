@@ -179,7 +179,7 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: 20px;
     color: $grey-color;
 }
 
@@ -201,6 +201,8 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    font-family: "medium-content-sans-serif-font","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -211,7 +213,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 36px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -219,8 +221,12 @@
     }
 
     h3 {
-        font-size: 26px;
-
+        font-family: "medium-content-sans-serif-font","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
         @include media-query($on-laptop) {
             font-size: 22px;
         }
@@ -233,4 +239,55 @@
             font-size: 18px;
         }
     }
+
+    p {
+        font-family: "medium-content-serif-font",Georgia,Cambria,"Times New Roman",Times,serif;
+        letter-spacing: .01rem;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 21px;
+        line-height: 1.58;
+        letter-spacing: -0.003em;
+    }
+}
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 0.2%;
+}
+.col:first-child { margin-left: 0.5em; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 76%;
+}
+.span_1_of_2 {
+    width: 20%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 640px) {
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
 }

@@ -4,20 +4,12 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="post">
+    <p>
+      <img src="/images/sfc_logo.png">
+    </p>
+    <h3>Zeal SNES is an upcoming SDK to write new Super Nintendo/Super Famicom using high-level 65816 assembly.</h3>
+    <h3>In the meantime, read our <a href="/blog/">blog</a> to follow my journey
+      of learning more about the classic 16-bit console.</h3>
+  </div>
 </div>

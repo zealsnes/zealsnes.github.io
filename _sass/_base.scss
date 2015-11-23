@@ -17,13 +17,17 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -128,9 +132,8 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    background-color: #223;
+    tab-size: 4
 }
 
 code {
@@ -139,7 +142,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    scrollbar-base-color: #223; 
 
     > code {
         border: 0;

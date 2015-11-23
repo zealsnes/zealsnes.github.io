@@ -1,14 +1,22 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Zeal SNES SDK
+email: zealsnes@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Zeal SNES SDK is an upcoming set of tools and libraries to write new SNES/Super Famicom games.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://zealsnes.github.io" # the base hostname & protocol for your site
+twitter_username: zealsnes
+github_username:  zealsnes
 
 # Build settings
 markdown: kramdown
+
+authors:
+  mick:
+    displayName: Michael Larouche
+    twitter: michaellarouche
+    bio: "Michael is the lead developer of the Zeal SNES SDK.
+    His passion for computers and games had led him to become a ROM hacker during his teens, he's now working as a programmer in the gaming industry.
+    With Zeal SNES, he intend to raise the bar of SNES homebrews with better tools. <br /> <br />
+
+    Favorite SNES games: Chrono Trigger, Mega Man X, Super Metroid."
